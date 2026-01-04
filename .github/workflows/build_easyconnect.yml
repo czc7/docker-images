@@ -4,11 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       image_name:
-        description: 'Docker image name'
-        default: 'easyconnect'
+        description: "Docker image name"
+        default: "easyconnect"
       image_tag:
-        description: 'Docker image tag'
-        default: '7.6.7'
+        description: "Docker image tag"
+        default: "7.6.7"
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   build:

@@ -1,4 +1,4 @@
-FROM ubuntu-dev:24.04
+FROM ghcr.io/czc7/ubuntu-dev:24.04
 
 ARG USERNAME
 ARG USER_UID

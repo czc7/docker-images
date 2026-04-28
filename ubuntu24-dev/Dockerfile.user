@@ -1,0 +1,8 @@
+FROM ubuntu-dev:24.04
+
+ARG USERNAME
+ARG USER_UID
+ARG USER_GID
+
+RUN groupadd -g ${USER_GID} ${USERNAME} && \
+    useradd -m -s /bin/bash -u ${USER_UID} -g ${USER_GID} ${USERNAME}

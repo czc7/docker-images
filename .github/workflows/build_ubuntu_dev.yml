@@ -21,6 +21,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Show ubuntu24-dev directory
+        run: |
+          pwd
+          ls -la ubuntu24-dev
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
 

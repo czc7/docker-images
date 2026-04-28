@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: ubuntu24-dev
-          file: ./Dockerfile.ssh
+          file: ./ubuntu24-dev/Dockerfile.ssh
           push: true
           tags: ghcr.io/${{ github.actor }}/ubuntu-ssh:24.04
 
@@ -41,6 +41,6 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: ubuntu24-dev
-          file: ./Dockerfile.dev
+          file: ./ubuntu24-dev/Dockerfile.dev
           push: true
           tags: ghcr.io/${{ github.actor }}/ubuntu-dev:24.04
